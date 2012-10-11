@@ -1,0 +1,11 @@
+$(function () {
+
+	$('#MySearch')
+		.on('searched', function (e, searchText) {
+			$('#content').html('<h1>Search results for ' + searchText + '</h1>');
+		})
+		.on('cleared', function () {
+			$('#content').html('');
+		});
+
+});
